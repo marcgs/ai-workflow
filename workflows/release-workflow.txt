@@ -1,0 +1,23 @@
+1. Gather information to call `create_change_context`.
+   a. Use the prompt of the user as title if applicable.
+   b. Offer the user the possibility of entering input required to create Change Context manually or by searching previous KMNRs to be used as reference.
+   c. If you have all information required proceed to step 2.
+   d. Else call `ask_clarification` with a prompt asking for the missing inputs.
+
+2. Create Change Context
+   a. Ask confirmation from the user. Display all information for creating change context.
+   b. Call `create_change_context`.
+   c. Output the Change Context details and go directly to step 3.
+
+3. Ask the user if a KITZ object linked to the created change context should be created as well.
+   a. If positive, proceed to step 4.
+   b. Otherwise, just end the conversation offering if you can be of any further help.
+
+4. Gather information to call `create_kitz`.
+   a. If you have all information required proceed to step 5.
+   b. Else call `ask_clarification` with a prompt asking for the missing inputs.
+
+5. Create Change Object (KITZ)
+   a. Ask confirmation from the user. Display all information for creating Change Object (KITZ).
+   b. Call `create_kitz`. Output the Change Object (KITZ) details.
+   c. Go to step 3.

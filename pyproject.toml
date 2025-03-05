@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ai-workflow"
+version = "0.1.0"
+description = ""
+authors = ["Marc Gomez <marcgomez@microsoft.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.61.1"
+python-dotenv = "^1.0.0"
+langchain = "^0.3.18"
+gradio = "^5.15.0"
+pypdf = "^5.2.0"
+faiss-cpu = "^1.10.0"
+langchain-openai = "^0.3.4"
+langchain-community = "^0.3.17"
+cryptography = "^44.0.0"
+pandas = "^2.2.3"
+termcolor = "^2.5.0"
+tiktoken = "^0.8.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
