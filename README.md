@@ -17,7 +17,7 @@ Once your model is ready, create an `.env` file by copying `.env.template` and r
 
 ## Running the sample
 
-Install Python dependencies if not previously done:
+Install Python dependencies if not previously done (this is not required if you open the project in a devcontainer):
 
 ```bash
 poetry install
